@@ -31,7 +31,7 @@ class PlayState extends FlxState
 		// add buttons
 		var playbutt:GoofyButton = new GoofyButton(0, 0, "play", function()
 		{
-			trace("PLAY");
+			openSubState(new LaunchSubstate());
 		});
 		playbutt.ID = 0;
 		menuButtons.add(playbutt);
